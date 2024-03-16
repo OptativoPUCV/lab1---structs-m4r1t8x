@@ -538,3 +538,55 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 53403c4
+Sat 16 Mar 2024 10:53:47 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+test.c:37:24: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+   37 | void print_linked_list(Nodo* lista) {
+      |                        ^~~~
+      |                        nodo
+test.c: In function ‘test_crearListaEnlazada’:
+test.c:331:5: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+  331 |     Nodo* lista = crearListaEnlazada(arr, size);
+      |     ^~~~
+      |     nodo
+test.c:331:19: error: initialization of ‘int *’ from incompatible pointer type ‘nodo *’ [-Werror=incompatible-pointer-types]
+  331 |     Nodo* lista = crearListaEnlazada(arr, size);
+      |                   ^~~~~~~~~~~~~~~~~~
+test.c:333:5: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+  333 |     Nodo* current = lista;
+      |     ^~~~
+      |     nodo
+test.c:336:37: error: request for member ‘numero’ in something not a structure or union
+  336 |       if (current == NULL || current->numero != arr[i]) {
+      |                                     ^~
+test.c:339:9: error: implicit declaration of function ‘print_linked_list’ [-Werror=implicit-function-declaration]
+  339 |         print_linked_list(lista);
+      |         ^~~~~~~~~~~~~~~~~
+test.c:343:11: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+  343 |           Nodo* temp = lista;
+      |           ^~~~
+      |           nodo
+test.c:344:24: error: request for member ‘siguiente’ in something not a structure or union
+  344 |           lista = lista->siguiente;
+      |                        ^~
+test.c:349:24: error: request for member ‘siguiente’ in something not a structure or union
+  349 |       current = current->siguiente;
+      |                        ^~
+test.c:360:9: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+  360 |         Nodo* temp = lista;
+      |         ^~~~
+      |         nodo
+test.c:361:22: error: request for member ‘siguiente’ in something not a structure or union
+  361 |         lista = lista->siguiente;
+      |                      ^~
+test.c:369:7: error: unknown type name ‘Nodo’; did you mean ‘nodo’?
+  369 |       Nodo* temp = lista;
+      |       ^~~~
+      |       nodo
+test.c:370:20: error: request for member ‘siguiente’ in something not a structure or union
+  370 |       lista = lista->siguiente;
+      |                    ^~
+cc1: all warnings being treated as errors
+Compilation failed
+7bd57c3
