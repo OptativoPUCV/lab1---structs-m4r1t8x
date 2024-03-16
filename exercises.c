@@ -164,10 +164,10 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  Nodo *cabeza = NULL, *temp = NULL, *actual = NULL;
+  nodo *cabeza = NULL, *temp = NULL, *actual = NULL;
   for (int i = 0; i < size; i++)
   {
-    temp = (Nodo *)malloc(sizeof(Nodo));
+    temp = (nodo *)malloc(sizeof(nodo));
     temp->numero = arr[i];
     temp->siguiente = NULL;
 
