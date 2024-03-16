@@ -101,7 +101,7 @@ int checkSorted(int arr[], int size)
     if(arr[i] <= arr[i + 1] )
       j++;
 
-    else if(arr[i] > arr[i + 1])
+    else if(arr[i] >= arr[i + 1])
     {
       k++;
     }
