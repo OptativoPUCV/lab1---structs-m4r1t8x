@@ -106,7 +106,7 @@ int checkSorted(int arr[], int size)
       k++;
     }
   }
-  printf("%d %d %d", j, k, size);
+  printf("%d", size);
   if(j == size - 1)
     return 1;
 
