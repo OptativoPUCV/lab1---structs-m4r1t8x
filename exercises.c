@@ -102,8 +102,10 @@ int checkSorted(int arr[], int size)
       j++;
 
     else if(arr[i] > arr[i + 1])
+    {
       k++;
       j++;
+    }
 
     else if(j == size && k == 0)
       return 1;
