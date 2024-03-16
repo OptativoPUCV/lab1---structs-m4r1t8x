@@ -94,6 +94,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) 
 {
+  int temp = 0
   for(int i = 0; i < size; i++)
     {
     if(arr[i] < arr[i + 1])
@@ -131,9 +132,9 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) 
 {
   strcpy(libro->titulo, titulo);
-  anioPublicacion = libro->anioPublicacion;
+  libro->anioPublicacion = anioPublicacion;
   strcpy(libro->autor.nombre, nombreAutor);
-  anioNacimiento = libro->autor.anioNacimiento;
+  libro->autor.anioNacimiento = anioNacimiento;
 }
 
 /*
