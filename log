@@ -21,3 +21,12 @@ Sat 16 Mar 2024 08:12:27 PM UTC:
  tests:  0|5
 total_score: 20/70
 32a8ebb
+Sat 16 Mar 2024 08:12:50 PM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+Sat 16 Mar 2024 08:14:14 PM UTC: 
+ exercises.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+7e752a2
