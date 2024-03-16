@@ -64,26 +64,25 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
   int suma = size1 + size2;
+  int i = 0, j = 0;
   while (suma > 0)
   {
-    for(int i = 0, j = 0; i < size1; i++)
+    while (j < size2 || i < size1)
     {
-      while (j < size2)
+      if(arr1[i] < arr2[j])
       {
-        if(arr1[i] < arr2[j])
-        {
-          result[i] = arr1[i];
-          break;
-        }
-        else
-        {
-          result[i] = arr2[j];
-          j++;
-          break;
-        }
+        result[i] = arr1[i];
+        i++;
+        break;
       }
-      suma--;
+      else
+      {
+        result[i] = arr2[j];
+        j++;
+        break;
+      }
     }
+    suma--;
     
   }
 }
