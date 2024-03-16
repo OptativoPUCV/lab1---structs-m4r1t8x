@@ -96,10 +96,12 @@ int checkSorted(int arr[], int size)
 {
   int j = 0, k = 0;
   
-  for(int i = 0; i < size ; i++)
+  for(int i = 0; i < size - 1; i++)
   {
-    if(arr[i] <= arr[i + 1] )
+    if(arr[i] <= arr[i + 1])
+    {
       j++;
+    }
 
     else if(arr[i] >= arr[i + 1])
     {
