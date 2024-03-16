@@ -157,17 +157,17 @@ lista enlazada.
 Recuerda reservar memoria dinámica para cada nodo usando malloc.
   */
 
-typedef struct nodo {
+typedef struct Nodo {
   int numero;
-  struct nodo *siguiente; // puntero al siguiente nodo
-} nodo;
+  struct Nodo *siguiente; // puntero al siguiente nodo
+} Nodo;
 
-nodo *crearListaEnlazada(int arr[], int size) 
+Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  nodo *cabeza = NULL, *temp = NULL, *actual = NULL;
+  Nodo *cabeza = NULL, *temp = NULL, *actual = NULL;
   for (int i = 0; i < size; i++)
   {
-    temp = (nodo *)malloc(sizeof(nodo));
+    temp = (Nodo *)malloc(sizeof(Nodo));
     temp->numero = arr[i];
     temp->siguiente = NULL;
 
