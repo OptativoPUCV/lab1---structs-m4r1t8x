@@ -106,10 +106,10 @@ int checkSorted(int arr[], int size)
       k++;
     }
   }
-  if(j == size - 2)
+  if(j == size)
     return 1;
 
-  else if(k == size - 2)
+  else if(k == size)
     return -1;
 
   return 0;
